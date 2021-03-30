@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html   lang="ko">
+<head>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/ScrollMagic.js"></script>
+    <script src="./js/animation.gsap.js"></script>  
+    <script src="./js/debug.addIndicators.min.js"></script>
+    <script src="./js/script.js"></script>
+    
+    
+<!--
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+-->
+    
+    
+	<link rel="stylesheet"  type="text/css"   href="./css/base.css"/>
+    <link rel="stylesheet"  type="text/css"   href="./css/index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Roboto+Mono:500" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="contents" id="contents">
+           
+            
+            
+            <div class="gnb">
+                <img src="./images/xexy_global3_01.jpg">
+                <a href="#none" class="logo" id="ani_logo">
+                    <img src="./images/xexy_global_logo_03.png">
+                    <span>The limits of XEXYMIX are endless</span>
+                </a>
+            </div>
+          
+           
+            <div style="padding-bottom:75px;"><img src="./images/xexy_global3_02.jpg"></div>
+            <div><img src="./images/xexy_global3_03.jpg"></div>
+           
+            <div><img src="./images/xexy_global3_04.jpg"></div>
+            <div class="flex-wrap">
+                <div data-aos="fade-up" data-aos-duration="700" data-aos-once="true" ><img src="./images/xexy_global3_05_1.jpg"></div>
+                <div class="center" data-aos="fade-up" data-aos-duration="700" data-aos-once="true" data-aos-delay="200"><img src="./images/xexy_global3_05_2.jpg"></div>
+                <div data-aos="fade-up" data-aos-duration="700" data-aos-once="true" data-aos-delay="400"><img src="./images/xexy_global3_05_3.jpg"></div>
+            </div>
+            
+            <div><img src="./images/xexy_global3_06.jpg"></div>
+            
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+    
+    
+</script>
+<script>
+    // build scene
+    var controller = new ScrollMagic.Controller();
+    var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration:200})
+        .setTween("#ani_logo", {scale:0.3, top: "-97px"}) // the tween durtion can be omitted and defaults to 1
+
+        //.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller);
+
+</script>
+
+

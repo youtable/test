@@ -1,0 +1,17 @@
+#wrapper{    max-width: 1920px; margin:auto; text-align: center;}
+.contents{position: relative; overflow: hidden;}
+.logo{position:absolute; top:100px; left:50%; transform: translate(-50%, 50%); text-align: center;    font-weight: 600;
+    font-size: 21px;}
+.logo img{width:1030px!important;
+    padding-bottom: 15px;}
+/*
+.logo img{width: 585px;
+    margin-left: 152px;}
+*/
+.logo span.active {opacity: 0;} 
+
+.gnb{position: fixed;z-index: 99;}
+.gnb img{width:100%;}
+.flex-wrap{display: flex; margin: auto; width:1662px;padding-bottom: 140px;}
+.flex-wrap .center{padding:0 30px;}
+.flex-wrap img{width:100%;}
